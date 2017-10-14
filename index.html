@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Introduction</title>
+<!--    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css" rel="stylesheet">      
+    <link href="style.css" rel="stylesheet">
+
+
+  </head>
+  <body>
+    <div id="fullpage">
+	<div id="logo" class="section">
+        <div class="container">
+            <div class="logoPic">
+                <img class="image" src="img/21272525_243790752810696_2894216408703834077_n.jpg" height="600vh" width="600vh">
+            </div>    
+            <div class="options">
+                <div></div>
+                <div class="first"><h2><span class="sessionz">GROUPS</span><p><span id="grpup">+</span>&nbsp;<span id="groups">None</span><span id="seconds"></span>&nbsp;<span id="grpdown">-</span></p></h2></div>
+                
+                <div><h2><span class="sessionz">ROUND LENGTH</span><p><span id="rndup">+</span>&nbsp;<span id="rndLength">5</span>m<span id="seconds"></span>&nbsp;<span id="rnddown">-</span></p></h2> </div>
+                
+                <div><h2><span class="sessionz">REST LENGTH</span><p><span id="rstup">+</span>&nbsp;<span id="rstLength">45</span>s<span id="seconds"></span>&nbsp;<span id="rstdown">-</span></p></h2></div> 
+                
+                <div class="last"><h2><span class="sessionz">TOTAL ROUNDS</span><p><span id="totup">+</span>&nbsp;<span id="totRnd">5</span><span id="seconds"></span>&nbsp;<span id="totdown">-</span></p></h2></div>    
+                <div></div>
+            </div> 
+            
+            <button onclick="roll()" class="goBtn">
+                <div class="go">
+                    <p>START</p>
+                </div>
+            </button>
+        </div>
+    </div>
+	<div id="timer" class="section">
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <img src="img/cropped-wordpress-banner_blanch.jpg" width="730">
+                </div>
+                <div class="message">
+                <p class="spre">SPAR</p>
+                </div>
+                <div class="workrest">
+                    <p class="aa">Round(min): <span id="workresta"></span></p>
+                    <hr>
+                    <p class="bb">Rest(sec): <span id="workrestb"></span></p>
+                </div>
+            </div>
+            <div class="number">
+                <div class="numb"><span class="numbMin">05</span>:<span class="numbsec">00</span></div>
+            </div>
+            <div class="footer">
+                <div class="grps">
+                    <p class="class"></p>
+                </div>
+                <div class="rndsLeft">
+                    <p>Round <span id="zrnd">1</span>/<span id="ttot">10</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--    <script type="text/javascript" src="jquery.fullPage.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.js"></script>      
+    <script src="script.js"></script>
+
+  </body>
+</html>

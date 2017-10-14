@@ -1,0 +1,146 @@
+* {
+    border: 1px solid black;
+        -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+     -khtml-user-select: none;
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none;
+}
+
+
+#page1 {
+    height: 100vh;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+     -khtml-user-select: none;
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none;    
+}
+
+#logo .container {
+    display: grid;
+    grid-template-rows: 3.5fr 1fr 0.5fr;
+    justify-items: center;
+    align-items: end;
+}
+
+#logo .container .options {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 2fr;
+    text-align: center;
+}
+
+#logo .container .options .first {
+/*    align-self: end;*/
+}
+
+#logo .container .goBtn {
+    margin-top: 4vh;
+    border: 1px solid black;
+    border-radius: 25px;
+    text-align: center;
+    width: 8vh;
+    height: 5vh;
+    margin: 0 auto;
+}
+
+#timer {
+    height: 100vh;
+    line-height: 20px;
+} 
+
+#timer .container .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+    z-index: -2;
+    text-align: center;
+}
+
+#timer .container .header .logo img {
+    position: relative;
+    top: 40px;
+    left: -20px;
+}
+
+#timer .container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#timer .container .number {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 550px;
+}
+
+#timer .container .number .numb {
+    margin: 0;
+    padding: 0;
+}
+
+#timer .container .header .message {
+    font-size: 240px;
+    padding: 0;
+}
+
+#timer .container .header .message p {
+    position: relative;
+    top: -100px;
+    left: -20px;
+}
+
+#timer .container .header .workrest {
+    text-align: center;
+    margin-top: 2vh;
+    font-size: 80px;
+}
+
+#timer .container .header .workrest .aa {
+    position: relative;
+    top: 70px;
+    right: 25px;
+}
+
+#timer .container .header .workrest .bb {
+    position: relative;
+    top: 70px;
+    right: 15px;
+}
+
+#timer .container .header .workrest hr {
+    padding-top: 8vh;
+    padding-top: 8vh;
+    margin: 0;
+    position: relative;
+    top: 70px;
+}
+
+#timer .container .header .workrest p {
+    padding: 0;
+    margin: 0;
+}
+
+#timer .container .footer {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    z-index: -3;
+    font-size: 190px;
+    margin-top: 20vh;
+}
+
+#timer .container .footer .grps {
+    position: relative;
+    top: -70px; 
+}
+
+#timer .container .footer .rndsLeft {
+    position: relative;
+    top: -70px;
+}
