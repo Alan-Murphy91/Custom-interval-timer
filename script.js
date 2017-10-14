@@ -8,12 +8,16 @@ var firstgrp;
 var lastgrp;
 var isGroup = false;
 var afterWait = false;
-
+var audioElement;
 
 
 
 $(document).ready(function() {
 	$('#fullpage').fullpage();
+    
+    
+    audioElement = document.createElement('audio');
+    audioElement.setAttribute('src', '16872_1461333020.mp3');
     
     groups = 'None';
     rndLength = parseInt($('#rndLength').html());
@@ -85,6 +89,11 @@ $(document).ready(function() {
     if(totRnd === 1){
         lastRnd = true;
     }
+    
+    $('.goBtn').click(function(){
+        $.fn.fullpage.moveSectionDown();
+    });
+    
     });
 
 
@@ -159,6 +168,7 @@ $(document).ready(function() {
                     sec--;
                     if(sec === -1 && tempRnd === 0){
                         clearInterval(sparInt);
+                        audioElement.play();
                         round++;
                         if(lastRnd){
                             setTimeout(function(){ location.reload(); }, 1000);

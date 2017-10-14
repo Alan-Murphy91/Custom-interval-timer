@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Introduction</title>
-<!--    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css" rel="stylesheet">      
+<!--    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css" rel="stylesheet">   -->
+    <link href="fullPage.js-master/jquery.fullPage.css" rel="stylesheet">   
     <link href="style.css" rel="stylesheet">
 
 
@@ -30,11 +30,11 @@
                 <div></div>
             </div> 
             
-            <button onclick="roll()" class="goBtn">
+            <div onclick="roll()" class="goBtn">
                 <div class="go">
                     <p>START</p>
+                    </div>
                 </div>
-            </button>
         </div>
     </div>
 	<div id="timer" class="section">
@@ -47,9 +47,12 @@
                 <p class="spre">SPAR</p>
                 </div>
                 <div class="workrest">
-                    <p class="aa">Round(min): <span id="workresta"></span></p>
-                    <hr>
-                    <p class="bb">Rest(sec): <span id="workrestb"></span></p>
+                    <p class="aa">Round(<span class="mincol">min</span>): <span id="workresta"></span></p>
+<!--                    <hr>-->
+                    <br/>
+                    <br/>
+                    <br/>
+                    <p class="bb">Rest(<span class="mincol">sec</span>): <span id="workrestb"></span></p>
                 </div>
             </div>
             <div class="number">
@@ -60,16 +63,17 @@
                     <p class="class"></p>
                 </div>
                 <div class="rndsLeft">
-                    <p class="roundshow">Round <span id="zrnd">1</span>/<span id="ttot">10</span></p>
+                    <p class="roundshow">Rnd <span id="zrnd">1</span>/<span id="ttot">10</span></p>
                 </div>
             </div>
         </div>
     </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!--    <script type="text/javascript" src="jquery.fullPage.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.js"></script>      
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+        <script src="jquery-3.2.1.min.js"></script>  
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.js"></script> -->
+    <script src="fullPage.js-master/jquery.fullPage.js"></script>        
     <script src="script.js"></script>
 
   </body>
