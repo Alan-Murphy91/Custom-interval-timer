@@ -4,8 +4,7 @@
 
 * {
         -webkit-touch-callout: none;
-    -webkit-user-select: none; 
-     -khtml-user-select: none;
+    -webkit-user-select: none;
        -moz-user-select: none; 
         -ms-user-select: none; 
             user-select: none;
@@ -28,7 +27,9 @@
     display: grid;
     grid-template-rows: 3.5fr 1fr 0.5fr;
     justify-items: center;
-    align-items: end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
 }
 
 #logo .container .image {
@@ -57,15 +58,13 @@
     position: relative;
     bottom: 50px;
     -webkit-box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.75);  
     cursor: pointer;
     font-family: 'Pontano Sans';
  background: #3498db;
   background-image: -webkit-linear-gradient(top, #CE6424, #C06E37);
-  background-image: -moz-linear-gradient(top, #CE6424, #C06E37);
-  background-image: -ms-linear-gradient(top, #CE6424, #C06E37);
   background-image: -o-linear-gradient(top, #CE6424, #C06E37);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#CE6424), to(#C06E37));
   background-image: linear-gradient(to bottom, #CE6424, #C06E37);
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
@@ -76,7 +75,8 @@
 }
 
 #logo .container .goBtn:hover {
-  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
 }
 
 
@@ -89,7 +89,9 @@
 #timer .container .header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    align-items: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
     text-align: center;
 }
 
@@ -108,7 +110,9 @@
 #timer .container .number {
     display: grid;
     justify-items: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 550px;
 }
 
@@ -163,7 +167,9 @@
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 190px;
     margin-top: 20vh;
 }
